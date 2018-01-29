@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	width="55px" height="36px" viewBox="0 0 55 36">
+<filter filterUnits="objectBoundingBox" x="0.00" y="0.00" width="100.00" height="100.00" id="filter0">
+<feFlood flood-color="rgb(239,127,131)" result="coFloodOut1"/>
+<feComposite in="coFloodOut1" in2="SourceAlpha" operator="in" result="coOverlay1"/>
+<feBlend in="coOverlay1" in2="SourceGraphic" mode="normal" result="colorOverlay1"/>
+</filter>
+<g transform="matrix(0.86 0.00 0.00 0.86 0.00 0.00)" filter="url(#filter0)"><path fillRule="evenodd" d="M 38.04 41.98C 35.99 41.98 34.68 40.29 34.68 38.21 34.68 36.12 36.32 34.43 38.37 34.43 42.81 34.43 46.87 32.85 50.1 30.22 50.02 30.22 49.89 30.23 49.81 30.23 41.64 30.23 34.93 23.47 34.93 15.12 34.93 6.78 41.38 0.01 49.55 0.01 57.72 0.01 64.01 6.77 64.01 15.11 64.01 15.12 64.01 15.12 64.01 15.12 64.01 29.93 52.54 41.98 38.04 41.98ZM 3.37 41.98C 1.33 41.98-0.01 40.29-0.01 38.21-0.01 36.12 1.64 34.43 3.68 34.43 8.13 34.43 12.19 32.85 15.42 30.22 15.34 30.22 15.22 30.23 15.13 30.23 6.96 30.23 0.25 23.47 0.25 15.12 0.25 6.78 6.72 0.01 14.89 0.01 23.06 0.01 29.36 6.77 29.36 15.11 29.36 15.12 29.36 15.12 29.36 15.12 29.36 29.93 17.88 41.98 3.37 41.98Z" fill="rgb(0,0,0)"/></g></svg>

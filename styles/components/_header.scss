@@ -1,3 +1,54 @@
-header {
-    width:100%;
+.mainnavall, .mainnavleft, .mainnavright ul {
+    display: flex;
+}
+
+.mainnavall {
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.mainnavall h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.mainnavwithlogo {
+    display: flex;
+    justify-content: space-around;
+    width: calc(50% + 64px);
+
+}
+
+.mainnavleft {
+    font-size: 14px;
+    font-weight:400;
+    text-transform: uppercase;
+}
+
+.mainnavleft li:not(:first-child) {
+    padding: 0px 15px;
+}
+
+.mainnavleft li:last-child {
+    // padding-left: 15px;
+}
+
+.mainnavright li {
+    padding: 0 10px;
+}
+
+.logoheader {
+    margin: 0;
+    padding: 0;
+    max-width: 120px;
+}
+
+@media (max-width:1200px) {
+    .mainnavleft {
+        visibility: hidden;
+    }
+    .logoheader img {
+        
+    }
+
 }

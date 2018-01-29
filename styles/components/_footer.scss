@@ -1,3 +1,147 @@
-footer {
-    background:mediumslateblue;
+$fontSecond: #888890;
+$softBlack: #1a1a26;
+
+
+.facebookIcon {
+    height: 23px;
+    width: 12px;
+}    
+.twitterIcon {
+    height: 19px;
+    width: 22px;
+}
+.gooIcon {
+    height: 23px;
+    width: 22px;
+}
+.instaIcon {
+    height: 21px;
+    width: 22px;
+}
+.pintIcon {
+    height: 23px;
+    width: 19px;
+}
+.footerLogo {
+    width: 120px;
+}
+
+.socialicons img:not(:first-child) {
+    margin: 10px 38px;
+}
+
+.socialicons img:first-child {
+    margin: 10px 38px 10px 0;
+}
+
+.socialicons {
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+.footermaincontent {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 110px;
+    color:$fontSecond;
+    font-weight: 400;
+    h2 {
+        margin: 0;
+        padding: 0;
+        color: #000000;
+        font-weight: 400;
+    }
+}
+
+.footersection:not(:first-child) {
+    margin-left: 15px;
+}
+
+.footersection a {
+    color: $fontSecond;
+    &:hover {
+        color: #000000;
+    }
+}
+
+.footersection p {
+    line-height: 24px;
+}
+
+.footercontactinfo {
+    max-width: 40%;
+}
+
+.contactcontent {
+    margin-top: 60px;
+}
+
+.footercontactdetails {
+    margin-top: 50px;
+}
+
+.bold {
+    color: $softBlack;
+    font-weight: 700;
+}
+
+.footersection ul {
+    margin-top: 50px;
+}
+
+.youraccount {
+    min-width: 175px;
+}
+
+.instaFeed {
+    margin-top: 60px;
+    // margin-left: 10px;
+}
+
+.instaAll {
+    margin-left: 20px;
+}
+
+.instaTop, .instaBottom {
+    display: flex;
+}
+
+.instaitem {
+    margin: 5px;
+}
+
+.paymentOptions {
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-around;
+}
+
+.card {
+    width: 34px;
+    height: 24px;
+}
+
+
+.footerheading::after {
+    content: "";
+    display: block;
+    width:40px;
+    padding-top: 15px;
+    border-bottom: 3px solid #a8edea;
+
+}
+
+.footergutter {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    p {
+        color: $fontSecond;
+        font-weight: 400;
+    }
+}
+
+.footergutter.bold {
+    color:$softBlack;
+    font-weight: 400;
 }
