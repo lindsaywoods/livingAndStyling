@@ -3,7 +3,7 @@ $fontSecond: #888890;
 .productgallery {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     text-align: center;
     margin-bottom: 100px;
     }
@@ -21,8 +21,6 @@ $fontSecond: #888890;
 }
 
 @media (max-width:1230px) {
-    // margin: 20px;
-
     .galleryitem:first-child {
         margin: 20px;
     }
@@ -143,7 +141,7 @@ $fontSecond: #888890;
     color: darken(#a8edea, 38);
 }
 
-@media (max-width:1230px) {
-    .productgallery {
-    }
-}
+// @media (max-width:1230px) {
+//     .productgallery {
+//     }
+// }
