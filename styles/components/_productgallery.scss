@@ -20,6 +20,19 @@ $fontSecond: #888890;
     margin: 10px 0 10px 10px;
 }
 
+@media (max-width:1230px) {
+    // margin: 20px;
+
+    .galleryitem:first-child {
+        margin: 20px;
+    }
+
+    .galleryitem:last-child {
+        margin: 20px;
+    }
+}
+
+
 .galleryitem {
     position: relative;
     p:not(.price) {

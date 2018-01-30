@@ -196,6 +196,12 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 .galleryitem:last-child {
   margin: 10px 0 10px 10px; }
 
+@media (max-width: 1230px) {
+  .galleryitem:first-child {
+    margin: 20px; }
+  .galleryitem:last-child {
+    margin: 20px; } }
+
 .galleryitem {
   position: relative; }
   .galleryitem p:not(.price) {
@@ -394,6 +400,10 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 
 .footersection:not(:first-child) {
   margin-left: 15px; }
+
+@media (max-width: 1170px) {
+  .footersection:first-child {
+    margin-left: 15px; } }
 
 .footersection a {
   color: #888890; }
@@ -661,10 +671,42 @@ button {
 @media (max-width: 840px) {
   .squareplants {
     padding: 10px 10px; }
+  .houseplants {
+    margin-right: 20px; }
   .airplantsflex {
-    padding: 130px 20px 140px 20px; }
+    padding: 130px 20px 140px 20px;
+    margin-left: 40px; }
+  .toptwosquares {
+    margin-right: 20px; }
   .bottomrectangle {
-    padding: 70px 10px; } }
+    padding: 70px 10px;
+    margin-right: 40px; } }
+
+@media (max-width: 800px) {
+  .officeplants, .houseplants, .bottomrectangle {
+    background-image: url("images/daria-shevtsova-57355.jpg");
+    padding: 10px; }
+  .airplantsflex {
+    margin-left: 0px;
+    padding: 10px;
+    margin-left: 80px;
+    padding: 0 50px; }
+  .productcategoriesall {
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .toptwosquares {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .bottomrectangle {
+    width: 240px; } }
 
 .title {
   text-align: center;

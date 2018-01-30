@@ -173,8 +173,6 @@ button {
 
 .airplantsflex {
     background-image: url("images/annie-spratt-79272.jpg");
-    // padding:13% ;
-    // padding: 20% 10% 20% 10%;
     padding: 250px 170px 250px 170px;
     display: flex;
     align-items: center;
@@ -253,16 +251,68 @@ button {
 @media (max-width:840px) {
     .squareplants {
     padding: 10px 10px;
-}
+    }
+    .houseplants {
+    margin-right: 20px;
+    }
+
     .airplantsflex {
     padding: 130px 20px 140px 20px;
-        
+    margin-left: 40px;
     }
+
+    .toptwosquares {
+        margin-right: 20px;
+    }
+
     .bottomrectangle {
     padding: 70px 10px;
+    margin-right: 40px;
     }
     
 }
+
+@media (max-width:800px) {
+     .officeplants, .houseplants, .bottomrectangle {
+        // background: #f2e8e9;
+        background-image: url("images/daria-shevtsova-57355.jpg");
+        padding: 10px;
+        // display: inline-block;
+    }
+    .airplantsflex {
+        margin-left: 0px;
+        padding: 10px;
+        margin-left: 80px;
+        padding: 0 50px; 
+        // flex-direction: column;
+    }
+
+    .productcategoriesall {
+        // flex-direction: column;
+        // display: inline-block;
+        margin: 0 auto;
+        display: flex;
+        // justify-content: space-around;
+        flex-wrap: wrap;
+        
+    }
+
+    .productcategories {
+        // flex-wrap: wrap;
+    }
+    .toptwosquares {
+        // flex-direction: column;
+        flex-wrap: wrap;
+        flex-direction: column;
+        
+    }
+
+    .bottomrectangle {
+        width: 240px;
+    }
+
+}
+
 
 
 
