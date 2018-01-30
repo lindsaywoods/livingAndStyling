@@ -197,7 +197,6 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   margin: 10px 0 10px 10px; }
 
 .galleryitem {
-  max-width: 16.67%;
   position: relative; }
   .galleryitem p:not(.price) {
     font-size: 14px; }
@@ -627,6 +626,46 @@ button {
   background-image: url("images/plantContainers.jpg");
   padding: 100px 70px; }
 
+@media (max-width: 1280px) {
+  .squareplants {
+    padding: 90px 40px; }
+  .airplantsflex {
+    padding: 250px 160px 240px 160px; }
+  .bottomrectangle {
+    padding: 100px 60px; } }
+
+@media (max-width: 1220px) {
+  .squareplants {
+    padding: 80px 30px; }
+  .airplantsflex {
+    padding: 220px 150px 210px 150px; }
+  .bottomrectangle {
+    padding: 80px 50px; } }
+
+@media (max-width: 1190px) {
+  .squareplants {
+    padding: 60px 10px; }
+  .airplantsflex {
+    padding: 190px 110px 200px 110px; }
+  .bottomrectangle {
+    padding: 80px 30px; } }
+
+@media (max-width: 1000px) {
+  .squareplants {
+    padding: 10px 10px; }
+  .airplantsflex {
+    padding: 130px 20px 140px 20px; }
+  .bottomrectangle {
+    padding: 70px 30px; } }
+
+@media (max-width: 840px) {
+  .squareplants {
+    padding: 10px 10px; }
+  .airplantsflex {
+    padding: 130px 20px 140px 20px; }
+  .bottomrectangle {
+    padding: 70px 10px; } }
+
 .title {
   text-align: center;
   font-size: 36px;
@@ -697,13 +736,13 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative; }
+  position: relative;
+  width: 70%;
+  margin: 0 auto;
+  margin: 20px o; }
 
 .plantvideocontainer {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(26, 26, 26, 0.5)), to(rgba(26, 26, 26, 0.5))), url("images/plantvideo.jpg");
-  background: -webkit-linear-gradient(rgba(26, 26, 26, 0.5), rgba(26, 26, 26, 0.5)), url("images/plantvideo.jpg");
-  background: -o-linear-gradient(rgba(26, 26, 26, 0.5), rgba(26, 26, 26, 0.5)), url("images/plantvideo.jpg");
-  background: linear-gradient(rgba(26, 26, 26, 0.5), rgba(26, 26, 26, 0.5)), url("images/plantvideo.jpg");
+  background: url("images/daria-shevtsova-57355.jpg");
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
@@ -714,7 +753,22 @@ button {
   text-transform: uppercase;
   letter-spacing: 3px;
   padding-top: 150px;
-  padding-bottom: 350px; }
+  padding-bottom: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.playicon {
+  width: 80px;
+  height: 80px;
+  background-color: #f07f84;
+  border-radius: 50%;
+  margin: 0 auto;
+  border: 10px solid rgba(255, 154, 158, 0.3); }
 
 .signup {
   margin: 0 auto;
@@ -789,3 +843,7 @@ input:focus {
 .line {
   height: 2px;
   border-bottom: 1px solid #F2F3EE; }
+
+@media (max-width: 1000px) {
+  .logosection {
+    display: none; } }
