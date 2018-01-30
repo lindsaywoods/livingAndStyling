@@ -455,7 +455,8 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 
 .card {
   width: 34px;
-  height: 24px; }
+  height: 24px;
+  margin: 2px; }
 
 .footerheading::after {
   content: "";
@@ -479,6 +480,48 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 .footergutter.bold {
   color: #1a1a26;
   font-weight: 400; }
+
+.footermobile {
+  display: none; }
+
+@media (max-width: 840px) {
+  .footermaincontent {
+    display: none; }
+  .footermobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 10px 0 0px 0; }
+  .twitterIcon {
+    height: 24px;
+    width: 27px; }
+  .gooIcon {
+    height: 28px;
+    width: 27px; }
+  .instaIcon {
+    height: 26px;
+    width: 27px; }
+  .pintIcon {
+    height: 28px;
+    width: 24px; }
+  img {
+    margin: 10px; }
+  img:first-of-type {
+    margin-left: 20px; }
+  h2 {
+    font-size: 18px;
+    margin: 10px;
+    text-align: right; }
+  .footergutter {
+    font-size: 12px; }
+  .footermobile h2:after {
+    content: "";
+    border-bottom: none; } }
 
 body {
   font-family: 'Poppins', sans-serif; }
@@ -805,10 +848,6 @@ button {
   justify-content: center;
   margin-top: 25px; }
 
-@media (max-width: 922px) {
-  .customerreview {
-    display: none; } }
-
 .videodotscontainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -901,6 +940,10 @@ button {
   border-left: 10px solid #ffffff;
   border-bottom: 5px solid transparent; }
 
+@media (max-width: 1034px) {
+  .customerreview, .customerquote, .plantvideocontainer {
+    display: none; } }
+
 .signup {
   margin: 0 auto;
   display: -webkit-box;
@@ -942,14 +985,12 @@ input:focus {
   margin: 1px;
   padding: 1px;
   position: relative; }
-  .enteremail::after {
-    content: url("images/MailIcon.png");
+  .enteremail img {
     width: 24px;
-    height: 18px;
-    padding: 0;
-    position: absolute;
-    margin-top: 50px;
-    right: 0; }
+    height: 18px; }
+
+.entermail img {
+  width: 24px; }
 
 .logosection {
   display: -webkit-box;

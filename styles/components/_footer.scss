@@ -125,6 +125,7 @@ $softBlack: #1a1a26;
 .card {
     width: 34px;
     height: 24px;
+    margin: 2px;
 }
 
 
@@ -145,9 +146,112 @@ $softBlack: #1a1a26;
         color: $fontSecond;
         font-weight: 400;
     }
-}
+    }
 
 .footergutter.bold {
     color:$softBlack;
     font-weight: 400;
 }
+
+.footermobile {
+    display: none;
+}
+
+@media (max-width:840px) {
+    .footermaincontent {
+        display: none;
+    }
+    .footermobile {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; 
+        margin: 10px 0 0px 0;
+    }
+
+            
+    .twitterIcon {
+        height: 24px;
+        width: 27px;
+        }
+    .gooIcon {
+        height: 28px;
+        width: 27px;
+    }
+    .instaIcon {
+        height: 26px;
+        width: 27px;
+    }
+    .pintIcon {
+        height: 28px;
+        width: 24px;
+    }
+
+    
+        img {
+            margin: 10px;
+            }
+        img:first-of-type {
+            margin-left: 20px;
+        }
+        h2 {
+            font-size: 18px;
+            margin: 10px;
+            text-align: right;
+        }
+    
+    .footergutter {
+        font-size: 12px;
+    }
+    
+    .footermobile h2:after {
+        content:"";
+        border-bottom: none;
+    }
+
+        
+    }
+    
+
+
+
+    // @media (max-width: 800px) {
+    //     .instaAll, .footerLogo, .footerlist {
+    //         display:none;
+//     }
+//     .contactcontent p {
+//         display: none;
+//     }
+//     .footergutter, .footermaincontent {
+//         margin-top: 0;
+//     }
+//     .socialicons {
+//         margin: 0;
+//         // width:50px;
+//     }
+//     .footersection {
+//         margin-top: 50px;
+//         // display: flex;
+//         // flex-direction: column;
+//     }
+//     .facebookIcon {
+//     height: 33px;
+//     width: 22px;
+// }    
+// .twitterIcon {
+//     height: 29px;
+//     width: 32px;
+// }
+// .gooIcon {
+//     height: 33px;
+//     width: 32px;
+// }
+// .instaIcon {
+//     height: 31px;
+//     width: 32px;
+// }
+// .pintIcon {
+//     height: 33px;
+//     width: 29px;
+// }
+
+// }

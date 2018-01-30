@@ -442,11 +442,7 @@ button {
     margin-top: 25px;
 }
 
-@media (max-width:922px) {
-    .customerreview {
-        display: none;
-    }
-}
+
 
 .videodotscontainer {
     display: flex;
@@ -530,6 +526,12 @@ button {
     border-bottom: 5px solid transparent; 
 }
 
+@media (max-width:1034px) {
+ .customerreview, .customerquote, .plantvideocontainer {
+        display: none;
+    }
+}
+
 
 // beginning of newsletter signup section 
 
@@ -568,15 +570,21 @@ input:focus {
     margin: 1px;
     padding: 1px;
     position: relative;
-        &::after {
-            content: url("images/MailIcon.png");
+        // &::after 
+        img
+        {
+            // content: url("images/MailIcon.png");
             width: 24px;
             height: 18px;
-            padding: 0;
-            position: absolute;
-            margin-top:50px;
-            right: 0;
+            // padding: 0;
+            // position: absolute;
+            // margin-top:50px;
+            // right: 0;
         }
+}
+
+.entermail img {
+    width: 24px;
 }
 
 
@@ -616,6 +624,8 @@ input:focus {
         display: none;
     }
 }
+
+
 
     
 // make partial
