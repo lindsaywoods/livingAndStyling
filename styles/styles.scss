@@ -75,6 +75,11 @@ button {
     font-weight: 400;
     margin-top: 5%;
     padding:1% 4%;
+    // transition: all 1s;
+}
+
+button:hover {
+    color:$fontSecond;
 }
 
 .headerdots {
@@ -167,6 +172,15 @@ button {
 
 }
 
+.productcatbutton p {
+    transition: all .3s;
+    
+}
+
+.productcatbutton h2 {
+    transition: all .3s;
+}
+
 .productcatbutton:hover p{
     color: darken(#a8edea, 38);
 }
@@ -174,6 +188,10 @@ button {
 .productcatbutton:hover h2{
     color: darken(#a8edea, 38);
 }
+
+
+
+
 
 
 .productcategoriesall {

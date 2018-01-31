@@ -598,6 +598,9 @@ button {
   margin-top: 5%;
   padding: 1% 4%; }
 
+button:hover {
+  color: #888890; }
+
 .headerdots {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -671,6 +674,16 @@ button {
     font-weight: 400;
     padding: 5px 0 0 0;
     margin: 0; }
+
+.productcatbutton p {
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s; }
+
+.productcatbutton h2 {
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s; }
 
 .productcatbutton:hover p {
   color: #24afa9; }
