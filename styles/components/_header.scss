@@ -15,12 +15,13 @@
 .mainnavwithlogo {
     display: flex;
     justify-content: space-around;
-    width: calc(50% + 64px);
+    width: calc(50% + 110px);
 
 }
 
 .mainnavleft {
-    font-size: 14px;
+    font-size: 10px;
+    padding-top: 5px;
     font-weight:400;
     text-transform: uppercase;
 }
@@ -29,13 +30,40 @@
     padding: 0px 15px;
 }
 
-.mainnavleft li:last-child {
-    // padding-left: 15px;
-}
-
 .mainnavright li {
     padding: 0 10px;
+    position: relative;
+    margin: 5px;
 }
+
+// DND - figure out placement
+// .notifyicon {
+//     position: relative;
+// }
+
+// .numberitems {
+//     position: absolute;
+//     right: 1%;
+//     top: 1%;
+//     font-size: 10px;
+// }
+
+
+
+// DND - figure out placement
+// .notifyicon::before {
+//     content: "2";
+//     font-size: 9px;
+//     background: #a8edea;
+//     border-radius: 50%;
+//     // padding: .5px 4px;
+//     width: 100%;
+    // position: absolute;
+    // right: 0;
+    // top:-10px;
+    // left:-10px;
+// }
+
 
 .logoheader {
     margin: 0;
@@ -45,10 +73,17 @@
 
 @media (max-width:1200px) {
     .mainnavleft {
-        visibility: hidden;
+        display: none;
     }
+
+    .mainnavwithlogo {
+        justify-content: flex-start;
+        width: 50%;
+        margin-left: 10px;
+    }
+
     .logoheader img {
-        
+        width: 100%;
     }
 
 }

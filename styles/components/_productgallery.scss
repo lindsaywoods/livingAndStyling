@@ -58,7 +58,6 @@ $fontSecond: #888890;
     background: #79dad6;
     color: #ffffff;
     width: 40px;
-    // padding: 5px 0;
     font-size: 10px;
     font-weight: 400;
     text-align: center;
@@ -75,7 +74,6 @@ $fontSecond: #888890;
     background: #f6b895;;
     color: #ffffff;
     width: 40px;
-    // padding: 5px 0;
     font-size: 10px;
     font-weight: 400;
     text-align: center;
@@ -92,7 +90,6 @@ $fontSecond: #888890;
     background: #ff9a9e;
     color: #ffffff;
     width: 40px;
-    // padding: 5px 0;
     font-size: 10px;
     font-weight: 400;
     text-align: center;
@@ -108,7 +105,6 @@ $fontSecond: #888890;
 }
 
 .overlay {
-    // border: 3px solid mediumvioletred;
     background-color:  rgba(26, 26, 38, 0.5);
     max-width: 100%;
     display: flex;
@@ -120,7 +116,6 @@ $fontSecond: #888890;
     left: 0; 
     top: 0; 
     bottom: 0;  
-    // visibility: hidden;
     opacity: -1;
         p {
             color: $fontSecond;
@@ -141,7 +136,15 @@ $fontSecond: #888890;
     color: darken(#a8edea, 38);
 }
 
-// @media (max-width:1230px) {
-//     .productgallery {
+// DND - adjust for removing rogue product gallery item on scaling down
+// @media (max-width: 920px) {
+//     .galleryitem:last-child {
+//         display: none;
+//     }
+// }
+
+// @media (max-width: 800px) {
+//     .galleryitem:last-child {
+//         display:none;
 //     }
 // }

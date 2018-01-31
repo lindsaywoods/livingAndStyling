@@ -153,10 +153,11 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   display: flex;
   -ms-flex-pack: distribute;
   justify-content: space-around;
-  width: calc(50% + 64px); }
+  width: calc(50% + 110px); }
 
 .mainnavleft {
-  font-size: 14px;
+  font-size: 10px;
+  padding-top: 5px;
   font-weight: 400;
   text-transform: uppercase; }
 
@@ -164,7 +165,9 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   padding: 0px 15px; }
 
 .mainnavright li {
-  padding: 0 10px; }
+  padding: 0 10px;
+  position: relative;
+  margin: 5px; }
 
 .logoheader {
   margin: 0;
@@ -173,7 +176,15 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 
 @media (max-width: 1200px) {
   .mainnavleft {
-    visibility: hidden; } }
+    display: none; }
+  .mainnavwithlogo {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    width: 50%;
+    margin-left: 10px; }
+  .logoheader img {
+    width: 100%; } }
 
 .productgallery {
   display: -webkit-box;
@@ -307,6 +318,8 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 
 .featured {
   width: 33%; }
+  .featured img {
+    width: 100%; }
 
 .featured:not(:first-child), .featured:not(:last-child) {
   margin: 15px; }
@@ -472,7 +485,8 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-top: 30px; }
+  margin-top: 30px;
+  margin-bottom: 30px; }
   .footergutter p {
     color: #888890;
     font-weight: 400; }
@@ -513,10 +527,12 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
     margin: 10px; }
   img:first-of-type {
     margin-left: 20px; }
-  h2 {
-    font-size: 18px;
+  .footermobile h2 {
+    font-size: 16px;
     margin: 10px;
-    text-align: right; }
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
   .footergutter {
     font-size: 12px; }
   .footermobile h2:after {
@@ -525,9 +541,6 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 
 body {
   font-family: 'Poppins', sans-serif; }
-
-img {
-  width: 100%; }
 
 ul, li {
   margin: 0;
@@ -552,6 +565,7 @@ a {
 
 .mainherocontent {
   text-align: center;
+  position: relative;
   padding: 18% 0; }
   .mainherocontent h1, .mainherocontent h2 {
     margin: 0; }
@@ -563,6 +577,17 @@ a {
     font-size: 60px;
     font-weight: 500; }
 
+.arrows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.arrows img {
+  width: 35px; }
+
 button {
   background: #f07f84;
   border: none;
@@ -572,6 +597,24 @@ button {
   font-weight: 400;
   margin-top: 5%;
   padding: 1% 4%; }
+
+.headerdots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.headerdot {
+  width: 12px;
+  height: 12px;
+  margin: 5px 5px 20px 5px;
+  border-radius: 50%;
+  background-color: #000000; }
+
+.headerdot:hover {
+  background-color: #888890; }
 
 .mainblurb {
   text-align: center;
@@ -628,6 +671,12 @@ button {
     font-weight: 400;
     padding: 5px 0 0 0;
     margin: 0; }
+
+.productcatbutton:hover p {
+  color: #24afa9; }
+
+.productcatbutton:hover h2 {
+  color: #24afa9; }
 
 .productcategoriesall {
   display: -webkit-box;
@@ -764,16 +813,22 @@ button {
   .productcategoriesall {
     -ms-flex-line-pack: center;
     align-content: center; }
-    .productcategoriesall .airplantsflex {
-      margin: 10px;
-      padding: 10px; }
-    .productcategoriesall .toptwosquares {
-      margin-right: 0; }
-    .productcategoriesall .bottomrectangle {
-      background-image: url("images/daria-shevtsova-573554.jpg");
-      padding: 10px;
-      margin: 10px;
-      width: 240px; } }
+  .airplantsflex {
+    margin: 10px;
+    padding: 10px; }
+  .toptwosquares {
+    margin-right: 0; }
+  .bottomrectangle {
+    background-image: url("images/daria-shevtsova-573554.jpg");
+    padding: 10px;
+    margin: 10px;
+    width: 240px; } }
+
+@media (max-width: 520px) {
+  .airplantsflex {
+    background-image: url("images/daria-shevtsova-573555.jpg"); }
+  .productcatbutton {
+    opacity: .8; } }
 
 .title {
   text-align: center;
@@ -826,16 +881,21 @@ button {
     font-size: 36px;
     font-weight: 500;
     margin-bottom: 80px;
-    margin-top: 70px; }
-  .customerquote p:not(:last-child) {
-    font-size: 16px;
-    font-weight: 400;
-    font-style: italic; }
-  .customerquote p:last-child {
-    font-size: 14px;
-    font-weight: 500;
-    color: #888890;
-    text-transform: uppercase; }
+    margin-top: 80px; }
+  .customerquote p {
+    margin: 5px 60px; }
+
+.rosinantequote {
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic; }
+
+.rosinante {
+  font-size: 14px;
+  font-weight: 500;
+  color: #888890;
+  text-transform: uppercase;
+  font-style: normal; }
 
 .customerquote h2::after {
   content: url("images/largequotes.svg");
@@ -983,14 +1043,12 @@ input:focus {
   -ms-flex-pack: center;
   justify-content: center;
   margin: 1px;
-  padding: 1px;
-  position: relative; }
-  .enteremail img {
+  padding: 1px; }
+  .enteremail::after {
+    content: url("images/MailIcon.png");
     width: 24px;
-    height: 18px; }
-
-.entermail img {
-  width: 24px; }
+    height: 18px;
+    margin-top: 50px; }
 
 .logosection {
   display: -webkit-box;

@@ -142,6 +142,7 @@ $softBlack: #1a1a26;
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
+    margin-bottom: 30px;
     p {
         color: $fontSecond;
         font-weight: 400;
@@ -187,16 +188,18 @@ $softBlack: #1a1a26;
     }
 
     
-        img {
-            margin: 10px;
-            }
+    img {
+        margin: 10px;
+    }
         img:first-of-type {
             margin-left: 20px;
         }
-        h2 {
-            font-size: 18px;
+    
+    .footermobile    h2 {
+            font-size: 16px;
             margin: 10px;
-            text-align: right;
+            // text-align: right;
+            justify-content: space-between;
         }
     
     .footergutter {
@@ -212,46 +215,3 @@ $softBlack: #1a1a26;
     }
     
 
-
-
-    // @media (max-width: 800px) {
-    //     .instaAll, .footerLogo, .footerlist {
-    //         display:none;
-//     }
-//     .contactcontent p {
-//         display: none;
-//     }
-//     .footergutter, .footermaincontent {
-//         margin-top: 0;
-//     }
-//     .socialicons {
-//         margin: 0;
-//         // width:50px;
-//     }
-//     .footersection {
-//         margin-top: 50px;
-//         // display: flex;
-//         // flex-direction: column;
-//     }
-//     .facebookIcon {
-//     height: 33px;
-//     width: 22px;
-// }    
-// .twitterIcon {
-//     height: 29px;
-//     width: 32px;
-// }
-// .gooIcon {
-//     height: 33px;
-//     width: 32px;
-// }
-// .instaIcon {
-//     height: 31px;
-//     width: 32px;
-// }
-// .pintIcon {
-//     height: 33px;
-//     width: 29px;
-// }
-
-// }
